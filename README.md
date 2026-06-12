@@ -16,4 +16,4 @@ Benvenuti nel repository del mio portfolio professionale. Questo spazio rapprese
 - **2024:** *The American Turning Point* — L'anno della svolta che ha ridefinito il mio approccio strategico al software e al business.
 
 ---
-🔗 **[Visualizza il Portfolio Live](https://aristide-dev-web.github.io/-aristide-portfolio/)**
+🔗 **[Visualizza il Portfolio Live](https://aristide-dev-web.github.io/aristide-portfolio/)**
