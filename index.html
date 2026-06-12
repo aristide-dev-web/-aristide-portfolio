@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aristide | Tech Founder</title>
-    <!-- Font moderno e pulito -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <title>Aristide | Tech Founder & Architect</title>
     <style>
         @keyframes mesh {
             0% { background-position: 0% 50%; }
@@ -14,123 +12,88 @@
         }
 
         body {
-            margin: 0;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            /* Gradient mesh più fluido e meno "arcobaleno finto" */
-            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #ffcc00, #9333ea, #4f46e5);
+            margin: 0; padding: 0;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(-45deg, #ff3300, #ff8800, #ffcc00, #00cc44, #0099ff, #6600ff, #cc00ff);
             background-size: 400% 400%;
             animation: mesh 12s ease infinite;
             color: white;
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
         }
 
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            font-size: 64px;
-            font-weight: 800;
-            margin: 0;
-            letter-spacing: -3px;
-            text-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        header { text-align: center; margin-bottom: 30px; }
+        
+        h1 { 
+            font-size: clamp(50px, 10vw, 90px); 
+            font-weight: 900; margin: 0; letter-spacing: -4px; 
+            text-transform: uppercase;
         }
 
         .tagline {
-            font-size: 18px;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            opacity: 0.8;
-            margin-top: 5px;
+            font-size: 16px; text-transform: uppercase; letter-spacing: 5px;
+            opacity: 0.9; font-weight: 300;
         }
 
-        /* Effetto Vetro Scuro (Glassmorphism) */
         .card {
-            background: rgba(15, 15, 15, 0.6); 
+            background: rgba(0, 0, 0, 0.7);
             padding: 50px;
             border-radius: 40px;
-            max-width: 650px;
-            backdrop-filter: blur(25px);
+            max-width: 850px; width: 90%;
+            backdrop-filter: blur(30px);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.4);
-            transition: transform 0.4s ease;
+            box-shadow: 0 40px 80px rgba(0,0,0,0.6);
         }
 
-        .card:hover {
-            transform: translateY(-10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+        h2 { 
+            font-size: clamp(24px, 5vw, 34px); 
+            font-weight: 700; margin-top: 0; margin-bottom: 25px;
+            color: #ffcc00; /* Oro per l'autorità */
         }
 
-        h2 {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            background: linear-gradient(to right, #fff, #ccc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        p { 
+            font-size: 18px; line-height: 1.8; 
+            color: rgba(255, 255, 255, 0.95);
+            text-align: justify;
         }
 
-        p {
-            font-size: 18px;
-            line-height: 1.7;
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 30px;
-        }
-
-        /* Bottone Tech Minimal */
         .btn {
-            display: inline-block;
-            background: white;
-            color: black;
-            padding: 16px 32px;
-            border-radius: 16px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            display: inline-block; background: #ffffff; color: #000;
+            padding: 18px 45px; border-radius: 12px;
+            text-decoration: none; font-weight: 800;
+            font-size: 14px; text-transform: uppercase;
+            letter-spacing: 2px; transition: 0.3s;
+            margin-top: 20px;
         }
 
-        .btn:hover {
-            background: #f0f0f0;
-            transform: scale(1.05);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
-        }
+        .btn:hover { background: #ffcc00; transform: translateY(-3px); }
 
-        footer {
-            position: absolute;
-            bottom: 30px;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            opacity: 0.6;
-        }
+        footer { position: absolute; bottom: 30px; font-size: 11px; letter-spacing: 2px; opacity: 0.6; }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Aristide</h1>
-        <div class="tagline">Tech Founder & Visionary</div>
+        <div class="tagline">Tech Founder & Software Architect</div>
     </header>
 
     <div class="card">
-        <h2>System Architecture & Development</h2>
-        <p>Specializzato nella progettazione di ecosistemi mobile scalabili. Unisco visione tecnica e business strategy per trasformare infrastrutture complesse in prodotti digitali performanti.</p>
+        <h2>Cybersecurity & System Optimization</h2>
+        <p>
+            Specializzato nella progettazione di ecosistemi digitali sicuri e altamente scalabili. 
+            Il mio approccio integra una solida competenza in <strong>Cybersecurity</strong> con una visione strategica volta all'<strong>ottimizzazione dei costi operativi</strong>, 
+            riducendo al minimo le spese infrastrutturali senza compromettere le performance. 
+            Attraverso l'integrazione di soluzioni <strong>AI-driven</strong>, sviluppo architetture software all'avanguardia che bilanciano efficienza economica, sicurezza e sostenibilità del business.
+        </p>
         <div style="text-align: center;">
             <a href="https://github.com/aristide-dev-web" class="btn">View Technical Assets</a>
         </div>
     </div>
 
     <footer>
-        Aristide — 2024: The American Turning Point.
+        ARISTIDE — 2024: THE AMERICAN TURNING POINT
     </footer>
 
 </body>
