@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aristide | Tech Founder & Architect</title>
+    <title>Aristide | Full Stack AI Architect</title>
+    <!-- Font Premium per un look più elegante -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
     <style>
         @keyframes mesh {
             0% { background-position: 0% 50%; }
@@ -13,7 +15,7 @@
 
         body {
             margin: 0; padding: 0;
-            font-family: 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
             background: linear-gradient(-45deg, #ff3300, #ff8800, #ffcc00, #00cc44, #0099ff, #6600ff, #cc00ff);
             background-size: 400% 400%;
             animation: mesh 12s ease infinite;
@@ -21,30 +23,50 @@
             min-height: 100vh;
             display: flex; flex-direction: column;
             align-items: center; justify-content: center;
+            position: relative;
+            overflow-x: hidden;
         }
+
+        /* Griglia Tecnica Blueprint per precisione visiva */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        header, .card, footer { z-index: 1; }
 
         header { text-align: center; margin-bottom: 30px; }
         
         h1 { 
             font-size: clamp(50px, 10vw, 90px); 
-            font-weight: 900; margin: 0;
+            font-weight: 800; margin: 0;
             letter-spacing: -4px; 
             text-transform: uppercase;
+            text-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
 
         .tagline {
-            font-size: 16px; text-transform: uppercase; letter-spacing: 5px;
-            opacity: 0.9; font-weight: 300;
+            font-size: 14px; text-transform: uppercase; letter-spacing: 6px;
+            opacity: 0.8; font-weight: 400; margin-top: 5px;
         }
 
         .card {
             background: rgba(0, 0, 0, 0.75);
-            padding: 50px;
+            padding: clamp(30px, 6vw, 60px);
             border-radius: 40px;
-            max-width: 850px; width: 90%;
+            max-width: 850px; width: 92%;
             backdrop-filter: blur(30px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 0 40px 80px rgba(0,0,0,0.6);
+            -webkit-backdrop-filter: blur(30px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 40px 100px rgba(0,0,0,0.5);
             box-sizing: border-box;
         }
 
@@ -52,48 +74,55 @@
             font-size: clamp(24px, 5vw, 34px); 
             font-weight: 700; margin-top: 0; margin-bottom: 25px;
             color: #ffcc00; 
+            letter-spacing: -1px;
         }
 
         p { 
             font-size: 18px; line-height: 1.8; 
-            color: rgba(255, 255, 255, 0.95);
+            color: rgba(255, 255, 255, 0.9);
             text-align: justify;
+            margin-bottom: 30px;
         }
 
-        .highlight { color: #fff; font-weight: 600; }
+        .highlight { color: #fff; font-weight: 700; }
 
         .btn {
             display: inline-block; background: #ffffff; color: #000;
             padding: 18px 45px; border-radius: 12px;
             text-decoration: none; font-weight: 800;
-            font-size: 14px; text-transform: uppercase;
+            font-size: 13px; text-transform: uppercase;
             letter-spacing: 2px; transition: 0.3s;
-            margin-top: 20px;
         }
 
-        .btn:hover { background: #ffcc00; transform: translateY(-3px); }
+        .btn:hover { 
+            background: #ffcc00; 
+            transform: translateY(-3px); 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4); 
+        }
 
-        footer { position: absolute; bottom: 30px; font-size: 11px; letter-spacing: 2px; opacity: 0.6; }
+        footer { 
+            position: absolute; bottom: 30px; font-size: 11px; 
+            letter-spacing: 2px; opacity: 0.6; text-transform: uppercase; 
+        }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Aristide</h1>
-        <div class="tagline">Tech Founder & Software Architect</div>
+        <div class="tagline">Full Stack AI Architect & Tech Founder</div>
     </header>
 
     <div class="card">
-        <h2>System Architecture & Digital Strategy</h2>
+        <h2>Cybersecurity, Scalability & System Optimization</h2>
         <p>
-            Progetto ecosistemi digitali scalabili ponendo la <span class="highlight">sicurezza informatica</span> e l' <span class="highlight">ottimizzazione delle risorse</span> come pilastri fondamentali dello sviluppo. 
-            Il mio approccio integra una gestione attenta della protezione dei dati con una visione strategica mirata all' <span class="highlight">efficienza economica</span>, 
-            riducendo al minimo le spese infrastrutturali senza sacrificare le performance.
+            In qualità di <span class="highlight">Full Stack Architect</span>, progetto ecosistemi digitali dove la tecnologia converge con la strategia di business. 
+            La mia forza risiede nell' <span class="highlight">AI-Driven Agility</span>: utilizzo l'Intelligenza Artificiale come catalizzatore per dominare qualsiasi stack tecnologico, garantendo una velocità di esecuzione superiore e un'architettura agnostica e all'avanguardia.
             <br><br>
-            Attraverso l'integrazione di metodologie <span class="highlight">AI-driven</span>, garantisco un'agilità operativa superiore nel trasformare architetture complesse in soluzioni software stabili, sicure e sostenibili per il business.
+            La mia missione è bilanciare <span class="highlight">sicurezza nativa</span> e <span class="highlight">scalabilità estrema</span> con una rigorosa <span class="highlight">ottimizzazione dei costi operativi</span>. Sviluppo soluzioni software progettate non solo per proteggere i dati, ma per massimizzare l'efficienza economica dell'intera infrastruttura.
         </p>
         <div style="text-align: center;">
-            <a href="https://github.com/aristide-dev-web" class="btn">View Technical Assets</a>
+            <a href="https://github.com/aristide-dev-web" class="btn">Explore Technical Assets</a>
         </div>
     </div>
 
